@@ -1,0 +1,10 @@
+{
+    "helloWorld": "Hello World!",
+    "@helloWorld": {
+        "description": "The conventional newborn programmer greeting"
+    },
+    "errorGenericMessage": "Something wrong happened, try again later!",
+    "@errorGenericMessage": {
+        "description": "Generic error message"
+    }
+}
