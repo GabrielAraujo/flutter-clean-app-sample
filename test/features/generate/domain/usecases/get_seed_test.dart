@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
+import 'package:superformula/core/usecases/usecase.dart';
 import 'package:superformula/features/generate/domain/entities/seed.dart';
 import 'package:superformula/features/generate/domain/repositories/get_seed_repository.dart';
 import 'package:superformula/features/generate/domain/usecases/get_seed_usecase.dart';
@@ -20,7 +21,7 @@ void main() {
   test('Should get seed form the repository', () async {
     when(mockGetSeedRepository.getSeed()).thenAnswer((_) async => tSeed);
 
-    final result = await useCase();
+    final result = await useCase(NoParams());
 
     expect(result, tSeed);
 
