@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:superformula/core/errors/exceptions.dart';
-import 'package:superformula/core/platform/network_info.dart';
+import 'package:superformula/core/network/network_info.dart';
 import 'package:superformula/features/generate/data/datasources/seed_local_data_source.dart';
 import 'package:superformula/features/generate/data/datasources/seed_remote_data_source.dart';
 import 'package:superformula/features/generate/data/models/seed_model.dart';
