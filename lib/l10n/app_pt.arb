@@ -1,4 +1,7 @@
 {
     "helloWorld": "Olá Mundo!",
-    "errorGenericMessage": "Alguma coisa aconteceu! Tente novamente mais tarde"
+    "errorGenericMessage": "Alguma coisa aconteceu! Tente novamente mais tarde",
+    "homeTitle": "Home",
+    "qrCodeMenuTitle": "QRCode",
+    "scanMenuTitle": "Escanear"
 }
