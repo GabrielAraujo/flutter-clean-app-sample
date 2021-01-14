@@ -2,20 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import 'package:superformula/core/routing/app_routes.dart';
+
 abstract class MenuItem {
-  final String type = "MenuItem";
+  final String destination = AppRoutes.root;
   String title(BuildContext context);
   IconData icon();
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is MenuItem &&
-          runtimeType == other.runtimeType &&
-          type == other.type;
-
-  @override
-  int get hashCode => type.hashCode;
 }
 
 class ScanMenuItem implements MenuItem {
@@ -27,7 +19,7 @@ class ScanMenuItem implements MenuItem {
       AppLocalizations.of(context).scanMenuTitle;
 
   @override
-  final String type = "ScanMenuItem";
+  final String destination = AppRoutes.scan;
 }
 
 class QRCodeMenuItem implements MenuItem {
@@ -39,5 +31,5 @@ class QRCodeMenuItem implements MenuItem {
       AppLocalizations.of(context).qrCodeMenuTitle;
 
   @override
-  final String type = "QRCodeMenuItem";
+  final String destination = AppRoutes.qrcode;
 }

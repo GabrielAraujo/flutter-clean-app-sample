@@ -28,6 +28,9 @@ class _HomePageState extends State<HomePage> {
   }
 
   void tappedMenuItem(MenuItem item) {
-    print(item);
+    Navigator.pushNamed(
+      context,
+      item.destination,
+    );
   }
 }

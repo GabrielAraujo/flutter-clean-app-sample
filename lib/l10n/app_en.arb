@@ -18,5 +18,13 @@
     "scanMenuTitle": "Scan",
     "@scanMenuTitle": {
         "description": "Title for menu item Scan"
+    },
+    "qrCodeTitle": "QRCode",
+    "@qrCodeTitle": {
+        "description": "Title for QRCode page"
+    },
+    "scanTitle": "Scan",
+    "@scanTitle": {
+        "description": "Title for Scan page"
     }
 }

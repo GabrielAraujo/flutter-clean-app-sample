@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:superformula/core/routing/app_routes.dart';
 import 'package:superformula/features/home/presentation/pages/home_page.dart';
 
+import '../../features/generate/presentation/pages/generate_page.dart';
+
 class RouteGenerator {
   static MaterialPageRoute generateRoutes(RouteSettings settings) =>
       MaterialPageRoute(
@@ -13,7 +15,7 @@ class RouteGenerator {
             case AppRoutes.home:
               return HomePage();
             case AppRoutes.qrcode:
-              return null;
+              return GeneratePage();
             case AppRoutes.scan:
               return null;
             default:

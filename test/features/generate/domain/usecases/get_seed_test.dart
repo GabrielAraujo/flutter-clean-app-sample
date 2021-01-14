@@ -13,7 +13,7 @@ void main() {
 
   setUp(() {
     mockGetSeedRepository = MockGetSeedRepository();
-    useCase = GetSeedUsecase(mockGetSeedRepository);
+    useCase = GetSeedUsecase(repository: mockGetSeedRepository);
   });
 
   final tSeed = Seed(seed: "seed", expiresAt: DateTime.now());

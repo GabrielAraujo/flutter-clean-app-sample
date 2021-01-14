@@ -1,6 +1,3 @@
-import 'dart:wasm';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/all.dart';
 import 'package:superformula/core/providers/viewmodel_providers.dart';
@@ -129,6 +126,7 @@ class _ExpandableMenuButtonState extends State<ExpandableMenuButton>
             ),
           ),
           FloatingActionButton(
+            heroTag: item.destination,
             onPressed: () {
               widget.onPressed(item);
             },

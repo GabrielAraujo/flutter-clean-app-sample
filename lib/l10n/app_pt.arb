@@ -3,5 +3,7 @@
     "errorGenericMessage": "Alguma coisa aconteceu! Tente novamente mais tarde",
     "homeTitle": "Home",
     "qrCodeMenuTitle": "QRCode",
-    "scanMenuTitle": "Escanear"
+    "scanMenuTitle": "Escanear",
+    "qrCodeTitle": "QRCode",
+    "scanTitle": "Escanear"
 }

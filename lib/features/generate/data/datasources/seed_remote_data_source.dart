@@ -17,7 +17,7 @@ class SeedRemoteDataSourceImpl implements SeedRemoteDataSource {
   @override
   Future<SeedModel> getSeed() async {
     final response = await client.get(
-      'https://1sf9yp4tea.execute-api.us-east-1.amazonaws.com/dev/seed',
+      'https://p0ivz4ffn9.execute-api.us-east-1.amazonaws.com/dev/seed',
       headers: {'Content-Type': 'application/json'},
     );
 
