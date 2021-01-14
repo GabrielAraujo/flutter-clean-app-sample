@@ -37,7 +37,7 @@ void main() {
     () {
       final tSeedModel = SeedModel.fromJson(json.decode(fixture('seed.json')));
       test(
-        'should preform a GET request on a URL with number being the endpoint and with application/json header',
+        'should preform a GET request on a URL and with application/json header',
         () {
           //arrange
           setUpMockHttpClientSuccess200();

@@ -12,15 +12,20 @@ abstract class AppException implements Exception {
 class ServerException implements AppException {
   @override
   String getLocalizedMessage(BuildContext buildContext) {
-    // TODO: implement getLocalizedMessage
-    throw UnimplementedError();
+    return getLocalizedMessage(buildContext);
+  }
+}
+
+class InvalidSeedException implements AppException {
+  @override
+  String getLocalizedMessage(BuildContext buildContext) {
+    return getLocalizedMessage(buildContext);
   }
 }
 
 class CacheException implements AppException {
   @override
   String getLocalizedMessage(BuildContext buildContext) {
-    // TODO: implement getLocalizedMessage
-    throw UnimplementedError();
+    return getLocalizedMessage(buildContext);
   }
 }
