@@ -23,7 +23,7 @@ class GenerateViewModel extends BaseViewModel {
     _rebuildTimer(newSeed.expiresAt);
   }
 
-  String get seconds => _seconds?.toString() ?? "";
+  String get seconds => _seconds?.toString() ?? "calculating..";
   setSeconds(int newSeconds) {
     _seconds = newSeconds;
     notifyListeners();

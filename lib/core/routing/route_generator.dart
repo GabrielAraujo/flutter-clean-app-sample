@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:superformula/core/routing/app_routes.dart';
 import 'package:superformula/features/home/presentation/pages/home_page.dart';
 
-import '../../features/generate/presentation/pages/generate_page.dart';
+import 'package:superformula/features/generate/presentation/pages/generate_page.dart';
 
 class RouteGenerator {
   static MaterialPageRoute generateRoutes(RouteSettings settings) =>

@@ -5,7 +5,7 @@ import 'package:qr_flutter/qr_flutter.dart';
 
 import 'package:superformula/core/providers/viewmodel_providers.dart';
 
-import '../viewmodels/generate_viewmodel.dart';
+import 'package:superformula/features/generate/presentation/viewmodels/generate_viewmodel.dart';
 
 class GeneratePage extends StatefulWidget {
   GeneratePage({Key key}) : super(key: key);
@@ -89,10 +89,10 @@ class _GeneratePageState extends State<GeneratePage> {
           margin: EdgeInsets.only(bottom: 25),
           padding: EdgeInsets.all(30),
           child: Text(
-            viewModel.seconds ?? "",
+            viewModel.seconds,
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 22.0,
+              fontSize: 30.0,
             ),
           ),
         )
