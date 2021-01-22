@@ -79,9 +79,10 @@ void main() {
         'should return server failure when the call to remote data source is unsuccessful',
         () async {
           when(mockRemoteDataSource.getSeed()).thenThrow(ServerException());
+
           expect(() async => await repository.getSeed(),
               throwsA(isA<ServerException>()));
-          verify(mockRemoteDataSource.getSeed());
+
           verifyZeroInteractions(mockLocalDataSource);
         },
       );
@@ -95,7 +96,7 @@ void main() {
       test(
         'should return last locally cached data when the cached data is present',
         () async {
-          when(mockRemoteDataSource.getSeed())
+          when(mockLocalDataSource.getLastSeed())
               .thenAnswer((_) async => tSeedModel);
 
           final result = await repository.getSeed();
@@ -109,10 +110,9 @@ void main() {
       test(
         'should return cache failure when the call to local data source is unsuccessful',
         () async {
-          when(mockRemoteDataSource.getSeed()).thenThrow(CacheException());
+          when(mockLocalDataSource.getLastSeed()).thenThrow(CacheException());
           expect(() async => await repository.getSeed(),
               throwsA(isA<CacheException>()));
-          verify(mockLocalDataSource.getLastSeed());
           verifyZeroInteractions(mockRemoteDataSource);
         },
       );

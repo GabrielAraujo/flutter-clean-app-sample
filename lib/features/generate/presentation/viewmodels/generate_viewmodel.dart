@@ -39,7 +39,6 @@ class GenerateViewModel extends BaseViewModel {
       setState(AppState.error);
       print(ex);
     }
-    return;
   }
 
   _rebuildTimer(DateTime expiresAt) {
@@ -59,7 +58,7 @@ class GenerateViewModel extends BaseViewModel {
 
   @override
   void dispose() {
-    _timer.cancel();
+    _timer?.cancel();
     super.dispose();
   }
 }

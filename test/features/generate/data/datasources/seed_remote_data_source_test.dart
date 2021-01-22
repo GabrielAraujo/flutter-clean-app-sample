@@ -38,14 +38,14 @@ void main() {
       final tSeedModel = SeedModel.fromJson(json.decode(fixture('seed.json')));
       test(
         'should preform a GET request on a URL and with application/json header',
-        () {
+        () async {
           //arrange
           setUpMockHttpClientSuccess200();
           // act
-          dataSource.getSeed();
+          await dataSource.getSeed();
           // assert
           verify(mockHttpClient.get(
-            'https://1sf9yp4tea.execute-api.us-east-1.amazonaws.com/dev/seed',
+            'https://p0ivz4ffn9.execute-api.us-east-1.amazonaws.com/dev/seed',
             headers: {'Content-Type': 'application/json'},
           ));
         },

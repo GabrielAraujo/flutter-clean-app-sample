@@ -46,10 +46,11 @@ void main() {
     });
 
     test('Should have failed state when request fail', () async {
-      when(mockUseCase(NoParams()))
-          .thenAnswer((_) async => throw ServerException());
+      when(mockUseCase(NoParams())).thenThrow(ServerException());
       final expectedStatus = AppState.error;
+
       await tViewModel.getSeed();
+
       expect(tViewModel.state, expectedStatus);
     });
   });
