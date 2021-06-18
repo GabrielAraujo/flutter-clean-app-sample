@@ -1,6 +1,6 @@
 # Descriptiom
 
-Superformula mobile Flutter test.
+Flutter Clean App Sample
 
 # About
 
