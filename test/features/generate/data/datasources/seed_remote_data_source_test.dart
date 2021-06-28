@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
-import 'package:superformula/core/errors/exceptions.dart';
-import 'package:superformula/features/generate/data/datasources/seed_remote_data_source.dart';
-import 'package:superformula/features/generate/data/models/seed_model.dart';
 
+import '../../../../../lib/core/errors/exceptions.dart';
+import '../../../../../lib/features/generate/data/datasources/seed_remote_data_source.dart';
+import '../../../../../lib/features/generate/data/models/seed_model.dart';
 import '../../../../fixtures/fixture_reader.dart';
 
 class MockHttpClient extends Mock implements http.Client {}
@@ -45,7 +45,9 @@ void main() {
           await dataSource.getSeed();
           // assert
           verify(mockHttpClient.get(
-            'https://p0ivz4ffn9.execute-api.us-east-1.amazonaws.com/dev/seed',
+            Uri.parse(
+              'https://p0ivz4ffn9.execute-api.us-east-1.amazonaws.com/dev/seed',
+            ),
             headers: {'Content-Type': 'application/json'},
           ));
         },

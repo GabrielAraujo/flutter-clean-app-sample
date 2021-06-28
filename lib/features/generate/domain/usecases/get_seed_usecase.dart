@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:superformula/core/usecases/usecase.dart';
-import 'package:superformula/features/generate/domain/entities/seed.dart';
-import 'package:superformula/features/generate/domain/repositories/get_seed_repository.dart';
+
+import '../../../../core/usecases/usecase.dart';
+import '../entities/seed.dart';
+import '../repositories/get_seed_repository.dart';
 
 class GetSeedUsecase extends UseCase<Seed, NoParams> {
   final GetSeedRepository repository;

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/all.dart';
-import 'package:superformula/core/providers/viewmodel_providers.dart';
-import 'package:superformula/features/home/presentation/models/menu_item.dart';
+
+import '../../../../core/providers/viewmodel_providers.dart';
+import '../models/menu_item.dart';
 
 class ExpandableMenuButton extends StatefulWidget {
   final Function onPressed;

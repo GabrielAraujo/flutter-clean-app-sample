@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/all.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:superformula/core/network/network_info.dart';
+import '../network/network_info.dart';
 
 class GlobalProviders {
   static final networkInfo =

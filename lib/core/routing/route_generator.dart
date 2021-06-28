@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:superformula/core/routing/app_routes.dart';
-import 'package:superformula/features/home/presentation/pages/home_page.dart';
 
-import 'package:superformula/features/generate/presentation/pages/generate_page.dart';
-import 'package:superformula/features/scan/presentation/pages/scan_page.dart';
+import '../../features/generate/presentation/pages/generate_page.dart';
+import '../../features/home/presentation/pages/home_page.dart';
+import '../../features/scan/presentation/pages/scan_page.dart';
+import 'app_routes.dart';
 
 class RouteGenerator {
   static MaterialPageRoute generateRoutes(RouteSettings settings) =>

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:superformula/features/generate/domain/entities/seed.dart';
+
+import '../../domain/entities/seed.dart';
 
 class SeedModel extends Seed {
   SeedModel({

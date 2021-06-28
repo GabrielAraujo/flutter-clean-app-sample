@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:superformula/features/generate/data/models/seed_model.dart';
-import 'package:superformula/features/generate/domain/entities/seed.dart';
 
+import '../../../../../lib/features/generate/data/models/seed_model.dart';
+import '../../../../../lib/features/generate/domain/entities/seed.dart';
 import '../../../../fixtures/fixture_reader.dart';
 
 void main() {

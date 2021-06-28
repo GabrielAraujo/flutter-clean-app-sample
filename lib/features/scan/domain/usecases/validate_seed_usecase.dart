@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:superformula/core/usecases/usecase.dart';
-import 'package:superformula/features/generate/domain/entities/seed.dart';
-import 'package:superformula/features/scan/domain/repositories/validate_seed_repository.dart';
+
+import '../../../../core/usecases/usecase.dart';
+import '../repositories/validate_seed_repository.dart';
 
 class ValidateSeedUsecase extends UseCase<bool, Params> {
   final ValidateSeedRepository repository;

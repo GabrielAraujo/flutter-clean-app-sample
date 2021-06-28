@@ -1,9 +1,9 @@
 import 'package:flutter_riverpod/all.dart';
-import 'package:superformula/core/providers/usecase_providers.dart';
-import 'package:superformula/features/home/presentation/viewmodels/home_viewmodel.dart';
 
-import 'package:superformula/features/generate/presentation/viewmodels/generate_viewmodel.dart';
-import 'package:superformula/features/scan/presentation/viewmodels/scan_viewmodel.dart';
+import '../../features/generate/presentation/viewmodels/generate_viewmodel.dart';
+import '../../features/home/presentation/viewmodels/home_viewmodel.dart';
+import '../../features/scan/presentation/viewmodels/scan_viewmodel.dart';
+import 'usecase_providers.dart';
 
 class ViewModelProviders {
   static final homeViewModel = Provider.autoDispose((ref) => HomeViewModel());

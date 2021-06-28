@@ -1,9 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:superformula/core/usecases/usecase.dart';
-import 'package:superformula/features/generate/domain/entities/seed.dart';
-import 'package:superformula/features/generate/domain/repositories/get_seed_repository.dart';
-import 'package:superformula/features/generate/domain/usecases/get_seed_usecase.dart';
+
+import '../../../../../lib/core/usecases/usecase.dart';
+import '../../../../../lib/features/generate/domain/entities/seed.dart';
+import '../../../../../lib/features/generate/domain/repositories/get_seed_repository.dart';
+import '../../../../../lib/features/generate/domain/usecases/get_seed_usecase.dart';
 
 class MockGetSeedRepository extends Mock implements GetSeedRepository {}
 

@@ -3,8 +3,9 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
-import 'package:superformula/core/errors/exceptions.dart';
-import 'package:superformula/features/scan/data/datasources/validate_seed_remote_data_source.dart';
+
+import '../../../../../lib/core/errors/exceptions.dart';
+import '../../../../../lib/features/scan/data/datasources/validate_seed_remote_data_source.dart';
 
 class MockHttpClient extends Mock implements http.Client {}
 
@@ -73,7 +74,9 @@ void main() {
           // assert
           verify(
             mockHttpClient.post(
-              'https://p0ivz4ffn9.execute-api.us-east-1.amazonaws.com/dev/seed/validate',
+              Uri.parse(
+                'https://p0ivz4ffn9.execute-api.us-east-1.amazonaws.com/dev/seed/validate',
+              ),
               headers: {'Content-Type': 'application/json'},
               body: jsonEncode({
                 "seed": tSeed,

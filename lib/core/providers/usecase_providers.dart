@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/all.dart';
-import 'package:superformula/core/providers/repository_providers.dart';
 
-import 'package:superformula/features/generate/domain/usecases/get_seed_usecase.dart';
-import 'package:superformula/features/scan/domain/usecases/validate_seed_usecase.dart';
+import '../../features/generate/domain/usecases/get_seed_usecase.dart';
+import '../../features/scan/domain/usecases/validate_seed_usecase.dart';
+import 'repository_providers.dart';
 
 class UseCaseProviders {
   static final getSeedUseCase = Provider.autoDispose((ref) {

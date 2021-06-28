@@ -1,11 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:superformula/core/errors/exceptions.dart';
-import 'package:superformula/core/network/network_info.dart';
-import 'package:superformula/features/generate/data/datasources/seed_local_data_source.dart';
-import 'package:superformula/features/generate/data/datasources/seed_remote_data_source.dart';
-import 'package:superformula/features/generate/data/models/seed_model.dart';
-import 'package:superformula/features/generate/data/repositories/get_seed_repository_impl.dart';
+
+import '../../../../../lib/core/errors/exceptions.dart';
+import '../../../../../lib/core/network/network_info.dart';
+import '../../../../../lib/features/generate/data/datasources/seed_local_data_source.dart';
+import '../../../../../lib/features/generate/data/datasources/seed_remote_data_source.dart';
+import '../../../../../lib/features/generate/data/models/seed_model.dart';
+import '../../../../../lib/features/generate/data/repositories/get_seed_repository_impl.dart';
 
 class MockRemoteDataSource extends Mock implements SeedRemoteDataSource {}
 

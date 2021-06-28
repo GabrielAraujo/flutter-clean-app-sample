@@ -2,8 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:superformula/core/errors/exceptions.dart';
-import 'package:superformula/features/generate/data/models/seed_model.dart';
+
+import '../../../../core/errors/exceptions.dart';
+import '../models/seed_model.dart';
 
 abstract class SeedLocalDataSource {
   Future<SeedModel> getLastSeed();

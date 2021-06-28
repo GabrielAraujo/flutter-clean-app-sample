@@ -1,9 +1,8 @@
 import 'package:flutter_riverpod/all.dart';
 
-import 'package:superformula/features/generate/data/datasources/seed_local_data_source.dart';
-import 'package:superformula/features/generate/data/datasources/seed_remote_data_source.dart';
-import 'package:superformula/features/scan/data/datasources/validate_seed_remote_data_source.dart';
-
+import '../../features/generate/data/datasources/seed_local_data_source.dart';
+import '../../features/generate/data/datasources/seed_remote_data_source.dart';
+import '../../features/scan/data/datasources/validate_seed_remote_data_source.dart';
 import 'global_providers.dart';
 
 class RemoteDataSourcesProviders {

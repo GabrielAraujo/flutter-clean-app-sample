@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:superformula/features/home/presentation/models/menu_item.dart';
-import 'package:superformula/features/home/presentation/widgets/expandable_menu_button.dart';
+
+import '../models/menu_item.dart';
+import '../widgets/expandable_menu_button.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);

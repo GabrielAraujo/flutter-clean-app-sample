@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:superformula/core/viewmodels/base_viewmodel.dart';
 
-import 'package:superformula/core/usecases/usecase.dart';
-import 'package:superformula/features/generate/domain/entities/seed.dart';
-import 'package:superformula/features/generate/domain/usecases/get_seed_usecase.dart';
+import '../../../../core/usecases/usecase.dart';
+import '../../../../core/viewmodels/base_viewmodel.dart';
+import '../../domain/entities/seed.dart';
+import '../../domain/usecases/get_seed_usecase.dart';
 
 class GenerateViewModel extends BaseViewModel {
   final GetSeedUsecase useCase;

@@ -1,4 +1,4 @@
-name: superformula
+name: flutter_clean
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -26,14 +26,14 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
-  intl: ^0.16.1 
-  shared_preferences: ^0.5.12+4
-  equatable: ^1.2.5
-  data_connection_checker: ^0.3.4
-  http: ^0.12.2
-  flutter_riverpod: ^0.12.1
-  qr_flutter: ^3.2.0
-  flutter_qr_bar_scanner: ^1.0.2
+  intl: 0.17.0
+  shared_preferences: 2.0.6
+  equatable: 2.0.3
+  data_connection_checker: 0.3.4
+  http: 0.13.3
+  flutter_riverpod: 0.14.0
+  qr_flutter: 4.0.0
+  flutter_qr_bar_scanner: 2.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -42,7 +42,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  mockito: ^4.1.3
+  mockito: 5.0.10
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

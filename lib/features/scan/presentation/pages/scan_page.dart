@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_qr_bar_scanner/qr_bar_scanner_camera.dart';
 import 'package:flutter_riverpod/all.dart';
-import 'package:superformula/core/providers/viewmodel_providers.dart';
-import 'package:superformula/features/scan/presentation/viewmodels/scan_viewmodel.dart';
+
+import '../../../../core/providers/viewmodel_providers.dart';
 
 class ScanPage extends StatefulWidget {
   ScanPage({Key key}) : super(key: key);

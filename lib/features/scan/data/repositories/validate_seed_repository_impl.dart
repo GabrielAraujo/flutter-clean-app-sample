@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:superformula/features/scan/data/datasources/validate_seed_remote_data_source.dart';
-import 'package:superformula/features/scan/domain/repositories/validate_seed_repository.dart';
+
+import '../../domain/repositories/validate_seed_repository.dart';
+import '../datasources/validate_seed_remote_data_source.dart';
 
 class ValidateSeedRepositoryImpl implements ValidateSeedRepository {
   final ValidateSeedRemoteDataSource remoteDataSource;

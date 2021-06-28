@@ -1,7 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:superformula/features/scan/domain/repositories/validate_seed_repository.dart';
-import 'package:superformula/features/scan/domain/usecases/validate_seed_usecase.dart';
+
+import '../../../../../lib/features/scan/domain/repositories/validate_seed_repository.dart';
+import '../../../../../lib/features/scan/domain/usecases/validate_seed_usecase.dart';
 
 class MockValidateSeedRepository extends Mock
     implements ValidateSeedRepository {}

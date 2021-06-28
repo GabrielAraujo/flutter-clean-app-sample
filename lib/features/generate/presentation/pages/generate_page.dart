@@ -3,9 +3,8 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_riverpod/all.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
-import 'package:superformula/core/providers/viewmodel_providers.dart';
-
-import 'package:superformula/features/generate/presentation/viewmodels/generate_viewmodel.dart';
+import '../../../../core/providers/viewmodel_providers.dart';
+import '../viewmodels/generate_viewmodel.dart';
 
 class GeneratePage extends StatefulWidget {
   GeneratePage({Key key}) : super(key: key);

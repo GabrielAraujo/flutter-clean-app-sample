@@ -1,10 +1,8 @@
 import 'package:flutter_riverpod/all.dart';
-import 'package:superformula/core/providers/datasources_providers.dart';
 
-import 'package:superformula/features/generate/data/repositories/get_seed_repository_impl.dart';
-import 'package:superformula/features/scan/data/repositories/validate_seed_repository_impl.dart';
-import 'package:superformula/features/scan/domain/repositories/validate_seed_repository.dart';
-
+import '../../features/generate/data/repositories/get_seed_repository_impl.dart';
+import '../../features/scan/data/repositories/validate_seed_repository_impl.dart';
+import 'datasources_providers.dart';
 import 'global_providers.dart';
 
 class RepositoryProviders {

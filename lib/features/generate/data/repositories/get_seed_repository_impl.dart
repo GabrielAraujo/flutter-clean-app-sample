@@ -1,9 +1,10 @@
 import 'package:flutter/widgets.dart';
-import 'package:superformula/core/network/network_info.dart';
-import 'package:superformula/features/generate/data/datasources/seed_local_data_source.dart';
-import 'package:superformula/features/generate/data/datasources/seed_remote_data_source.dart';
-import 'package:superformula/features/generate/domain/entities/seed.dart';
-import 'package:superformula/features/generate/domain/repositories/get_seed_repository.dart';
+
+import '../../../../core/network/network_info.dart';
+import '../../domain/entities/seed.dart';
+import '../../domain/repositories/get_seed_repository.dart';
+import '../datasources/seed_local_data_source.dart';
+import '../datasources/seed_remote_data_source.dart';
 
 class GetSeedRepositoryImpl implements GetSeedRepository {
   final SeedRemoteDataSource remoteDataSource;

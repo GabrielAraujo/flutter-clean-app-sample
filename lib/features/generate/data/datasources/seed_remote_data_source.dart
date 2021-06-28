@@ -2,8 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
-import 'package:superformula/core/errors/exceptions.dart';
-import 'package:superformula/features/generate/data/models/seed_model.dart';
+
+import '../../../../core/errors/exceptions.dart';
+import '../models/seed_model.dart';
 
 abstract class SeedRemoteDataSource {
   Future<SeedModel> getSeed();
@@ -17,7 +18,9 @@ class SeedRemoteDataSourceImpl implements SeedRemoteDataSource {
   @override
   Future<SeedModel> getSeed() async {
     final response = await client.get(
-      'https://p0ivz4ffn9.execute-api.us-east-1.amazonaws.com/dev/seed',
+      Uri.parse(
+        'https://p0ivz4ffn9.execute-api.us-east-1.amazonaws.com/dev/seed',
+      ),
       headers: {'Content-Type': 'application/json'},
     );
 

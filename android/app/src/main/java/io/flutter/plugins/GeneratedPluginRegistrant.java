@@ -16,7 +16,7 @@ public final class GeneratedPluginRegistrant {
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     ShimPluginRegistry shimPluginRegistry = new ShimPluginRegistry(flutterEngine);
       com.github.contactlutforrahman.flutter_qr_bar_scanner.FlutterQrBarScannerPlugin.registerWith(shimPluginRegistry.registrarFor("com.github.contactlutforrahman.flutter_qr_bar_scanner.FlutterQrBarScannerPlugin"));
-      com.github.rmtmckenzie.nativedeviceorientation.NativeDeviceOrientationPlugin.registerWith(shimPluginRegistry.registrarFor("com.github.rmtmckenzie.nativedeviceorientation.NativeDeviceOrientationPlugin"));
+    flutterEngine.getPlugins().add(new com.github.rmtmckenzie.native_device_orientation.NativeDeviceOrientationPlugin());
     flutterEngine.getPlugins().add(new io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin());
   }
 }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:superformula/core/errors/exceptions.dart';
-import 'package:superformula/core/viewmodels/base_viewmodel.dart';
-import 'package:superformula/features/scan/domain/usecases/validate_seed_usecase.dart';
+
+import '../../../../core/errors/exceptions.dart';
+import '../../../../core/viewmodels/base_viewmodel.dart';
+import '../../domain/usecases/validate_seed_usecase.dart';
 
 class ScanViewModel extends BaseViewModel {
   final ValidateSeedUsecase useCase;

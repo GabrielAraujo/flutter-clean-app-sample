@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:superformula/core/errors/exceptions.dart';
-import 'package:superformula/features/generate/data/datasources/seed_local_data_source.dart';
-import 'package:superformula/features/generate/data/models/seed_model.dart';
 
+import '../../../../../lib/core/errors/exceptions.dart';
+import '../../../../../lib/features/generate/data/datasources/seed_local_data_source.dart';
+import '../../../../../lib/features/generate/data/models/seed_model.dart';
 import '../../../../fixtures/fixture_reader.dart';
 
 class MockSharedPreferences extends Mock implements SharedPreferences {}
